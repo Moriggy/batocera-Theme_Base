@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+#############################################
+####		  Theme Basico				 ####
+####	   by Moriggy (EmulOS Team)		 ####
+####									 ####
+####		Tipo de vista: varios		 ####
+#############################################
+
+.....................................
+ Valores Hexadecimales de Opacidad / Hex Opacity Values
+
+Opaque/Opaco                           Translucide / Translucido                             Invisible
+100%  95%  90%  85%  80%  75%  70%  65%  60%  65%  50%  45%  40%  35%  30%  25%  20%  15%  10%  5%  0%
+ FF   F2   E6   D9   CC   BF   B3   A6   99   8C   80   73   66   59   4D   40   33   26   1A   0D  00
+ 
+-->
+
+<theme>
+
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+		<baseColor>8b0000</baseColor>
+		<gradientEndColor>6b2020</gradientEndColor>
+		<glowColor>Ab000020</glowColor>
+		<systemInfoColor>DDDDDDD8</systemInfoColor>
+		<groupColor>BD4747</groupColor>
+		<groupSeparatorColor>BD4747</groupSeparatorColor>
+		<backgroundImage>./_art/frame.png</backgroundImage>
+		<systemViewExInfos>Mas Informacion Sistema</systemViewExInfos>
+		<animationsSubsetName>Animaciones</animationsSubsetName>
+		<helpSubsetName>Color iconos</helpSubsetName>
+		<colored>De Color</colored>
+		<subset.colorset>Colores</subset.colorset>		
+	</variables>
+	
+	<view name="screen">
+	
+		<!-- Reloj pantalla -->
+		
+		<text name="clock">
+			<textColor>FFFFFF</textColor>
+			<color>${baseColor}</color>
+			<fontSize>0.023</fontSize>
+			<fontPath>./_art/fonts/Watone.ttf</fontPath>
+			<pos>0.905 0.954</pos>
+			<size>0.062 0.031</size>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+		
+		<batteryIndicator name="batteryIndicator">
+			<visible>false</visible>
+		</batteryIndicator>
+		
+	</view>
+	
+	<!-- Opciones de colores  -->
+	
+	<subset name="colorset" displayName="${subset.colorset}">
+		<include name="azul" displayName="${blue}">./subsets/colorsets/blue.xml</include>
+		<include name="rojo" displayName="${red}">./subsets/colorsets/red.xml</include>
+		<include name="verde" displayName="${green}">./subsets/colorsets/green.xml</include>
+		<include name="cian">./subsets/colorsets/cyan.xml</include>
+		<include name="amarillo" displayName="${yellow}">./subsets/colorsets/yellow.xml</include>
+		<include name="violeta">./subsets/colorsets/violet.xml</include>
+		<include name="naranja">./subsets/colorsets/orange.xml</include>
+		<include name="gris" displayName="${gray}">./subsets/colorsets/gray.xml</include>
+	</subset>
+	
+	<!-- Vistas comunes  -->
+	
+	<include>./vistas/menu.xml</include>
+	<include>./vistas/system.xml</include>
+	
+	<!-- Tipos de vistas de los juegos	-->
+	
+	<include>./vistas/Lista_Juegos/gamecarousel.xml</include>
+	<include>./vistas/Lista_Juegos/basica.xml</include>
+	<include>./vistas/Lista_Juegos/detallada.xml</include>
+	
+	<!-- Tipos de vistas de sistemas	-->
+	
+	<subset name="systemview" displayName="Vista Sistemas">
+		<include name="Horizontal">./vistas/Vistas_Sistemas/horizontal.xml</include>
+		<include name="Rueda">./vistas/Vistas_Sistemas/rueda.xml</include>
+		<include name="Wheel">./vistas/Vistas_Sistemas/wheel.xml</include>
+	</subset>
+	
+	<!-- Iconos info sistema  -->
+	
+	<include subset="Tipo de iconos" name="Standard Icons">./_art/iconsets/default.xml</include>
+	<include subset="Tipo de iconos" name="SNES">./_art/iconsets/snes.xml</include>
+	<include subset="Tipo de iconos" name="SNES ALT">./_art/iconsets/snesalt.xml</include>
+	<include subset="Tipo de iconos" name="XBox">./_art/iconsets/xbox.xml</include>
+	<include subset="Tipo de iconos" name="PSX">./_art/iconsets/psx.xml</include>
+
+	
+	<!-- Subset options for help -->
+	
+	<subset name="helpsystem" displayName="${helpSubsetName}">
+		<include name="Con color" displayName="${colored}">./subsets/help/colorhelp.xml</include>
+		<include name="Sin Color" displayName="${gray}">./subsets/help/default.xml</include>
+	</subset>
+	
+</theme>

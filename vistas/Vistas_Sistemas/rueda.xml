@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+	
+		<!-- Modo de vista de los sistemas -->
+		
+		<carousel name="systemcarousel" extra="true">
+			<type>vertical_wheel</type>
+			<pos>0.25 0.005</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<color>FFFFFF00</color>
+			<logoScale>1.65</logoScale>
+			<logoSize>0.11 0.11</logoSize>
+			<logoRotation>19</logoRotation>
+			<logoRotationOrigin>2.31 0.45</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>14</maxLogoCount>
+			<zIndex>2</zIndex>
+		</carousel>
+					
+		<!-- Numero de juegos del sistema --> 
+			
+		<text name="systemInfo">		
+			<pos>0.05 0.38</pos>
+			<size>1 0.25</size>
+			<backgroundColor>00000000</backgroundColor>
+			<color>${systemInfoColor}</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+			<glowSize>1</glowSize>
+			<reflexion>0.20 0.0</reflexion>
+			<fontPath>./_art/fuentes/BigSquareDots.ttf</fontPath>
+			<fontSize>0.047</fontSize>
+			<zIndex>3</zIndex>
+		</text>
+		
+		<!-- Menu de ayuda -->
+		
+		<helpsystem name="help">
+			<pos>0.65 0.02</pos>
+			<textColor>${baseColor}</textColor>
+			<iconColor>ffffff</iconColor>
+			<fontSize>0.025</fontSize>
+		</helpsystem>
+			
+	</view>
+  
+</theme>

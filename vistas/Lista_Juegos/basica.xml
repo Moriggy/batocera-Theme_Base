@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+  <formatVersion>7</formatVersion>
+
+	<view name="basic">
+  
+		<!-- Fondo gamelist -->
+		
+		<image name="backgroundfilter" extra="true">		
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./_art/basico.png</path>
+			<zIndex>1</zIndex>			
+		</image>
+		
+		<!-- Logo sistema -->
+		
+		<image name="logo" extra="false">		
+			<path>./_art/logos/${system.theme}.png</path>
+			<pos>0.51 0.01</pos>
+			<size>0.25 0.1</size>
+			<zIndex>2</zIndex>			
+		</image>
+	
+		<!-- Texto del sistema -->
+
+		<helpsystem name="help">
+			<pos>0.01 0.96</pos>
+			<iconColor>FFFFFF00</iconColor>
+			<textColor>${baseColor}</textColor>
+			<fontSize>0.02</fontSize>
+			<fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		</helpsystem>
+		
+		<!-- Posicion de listado de juegos -->
+		
+		<textlist name="gamelist">		
+			<selectorImagePath>./_art/selector.png</selectorImagePath>
+			<selectorColor>719CC6</selectorColor>
+			<selectedColor>719CC6</selectedColor>
+			<primaryColor>dee0e8</primaryColor>
+			<secondaryColor>eac428</secondaryColor>
+			<fontPath>./_art/fuentes/BigSquareDots.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.03</fontSize>
+			<alignment>center</alignment>
+			<pos>0.18 0.135</pos>
+			<size>0.652 0.8</size>
+			<lineSpacing>1.475</lineSpacing>
+			<horizontalMargin>0.05</horizontalMargin>
+			<scrollSound>./_art/scroll.wav</scrollSound>
+			<zIndex>3</zIndex>			
+		</textlist>
+		
+		<!-- Posicion y tamaño imagen juego -->
+
+		<image name="md_image">
+			<maxSize>0.35 0.46</maxSize>
+			<pos>0.2 0.4</pos>
+			<zIndex>3</zIndex>
+		</image>
+		
+	</view>
+</theme>

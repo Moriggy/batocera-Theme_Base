@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="gamecarousel">
+		<gamecarousel name="gamecarousel">
+		<type>vertical_wheel</type>
+		<pos>-0.085 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<logoScale>1.4</logoScale>
+		<logoSize>0.14 0.14</logoSize>
+		<logoRotation>16</logoRotation>
+		<logoRotationOrigin>3.2 0.25</logoRotationOrigin>
+		<logoAlignment>right</logoAlignment>
+		<maxLogoCount>7</maxLogoCount>
+		<imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
+		<scrollSound>./_art/scroll.wav</scrollSound>
+		<zIndex>3</zIndex>
+    </gamecarousel> 
+		
+	<helpsystem name="help">
+		<pos>1 1</pos>
+	</helpsystem>
+		
+    <text name="gamecarouselLogoText">
+		<color>FFFFFFFF</color>
+		<glowColor>000000FF</glowColor>
+		<glowSize>4</glowSize>
+		<lineSpacing>1.0</lineSpacing>
+    </text>
+	
+    <!-- Video scrapeado del juego -->
+		
+	<video name="md_video">
+		<maxSize>0.33 0.46</maxSize>
+		<pos>0.199 0.4</pos>
+		<delay>0.8</delay>
+		<showSnapshotNoVideo>false</showSnapshotNoVideo>
+		<showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>2</zIndex>
+	</video>
+	
+	<!-- Posicion y tamaño imagen juego -->
+
+	<image name="md_image">
+		<maxSize>0.35 0.4</maxSize>
+		<pos>0.2 0.4</pos>
+		<zIndex>2</zIndex>
+	</image>
+	
+	<image name="background" extra="true">
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<path>./_art/wheel.png</path>
+		<zIndex>1</zIndex>
+	</image>
+	
+	<image name="logo">
+		<path>./_art/logos/${system.theme}.png</path>
+		<pos>0.51 0.02</pos>
+		<size>0.25 0.1</size>
+		<zIndex>1</zIndex>
+	</image>
+	
+	<image name="md_fanart">
+		<pos>0.5 0</pos>
+		<size>0.5 1</size>
+		<origin>0 0</origin>
+		<color>FFFFFF00</color>
+		<colorEnd>FFFFFFB3</colorEnd>
+		<gradientType>horizontal</gradientType>
+		<linearSmooth>true</linearSmooth>
+		<zIndex>2</zIndex>
+    </image>
+
+    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
+		<storyboard>
+			<animation property="opacity" from="0" duration="350" mode="easeOut"/>
+		</storyboard>
+    </text>
+	
+    <text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
+		<color>969696</color>
+		<forceUppercase>0</forceUppercase>
+		<fontPath>./_art/fuentes/.ttf</fontPath>
+		<fontSize>0.023</fontSize>
+    </text>
+    
+    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players">
+		<color>969696</color>
+		<forceUppercase>0</forceUppercase>
+		<fontPath>./_art/fuentes/.ttf</fontPath>
+		<fontSize>0.023</fontSize>
+    </text>
+
+    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
+		<pos>1 1</pos>
+    </text>
+
+    <datetime name="md_lastplayed">
+		<pos>1 1</pos>
+    </datetime>
+    
+    <image name="md_flag">
+		<origin>0 0.5</origin>
+		<pos>1 1</pos>
+		<maxSize>0.02 0.05</maxSize>
+		<linearSmooth>true</linearSmooth>
+    </image>
+	
+    <text name="md_developer">
+		<color>EFEFFF</color>
+		<pos>1 1</pos>
+		<size>0.30 0.05</size>
+		<alignment>left</alignment>
+		<fontSize>0.025</fontSize>
+    </text>
+    
+	<rating name="md_rating">
+		<pos>1 1</pos>
+		<size>0.05 0.03</size>
+		<size verticalScreen="true">0.05 0.02</size>
+		<horizontalAlignment>right</horizontalAlignment>      
+		<color>FFFF00</color>
+		<unfilledColor>808080</unfilledColor>
+		<unfilledPath>:/star_filled.svg</unfilledPath>
+    </rating>
+	
+    <text name="md_lbl_players">
+		<pos>1 1</pos>
+		<pos verticalScreen="true">0.85 0.645</pos>
+		<size>0.09 0</size>
+    </text>
+
+    <text name="md_players">
+		<color>EFEFFF</color>
+		<pos>1 1</pos>
+		<size>0.02 0</size>
+    </text>
+
+    <text name="md_lbl_releasedate">
+		<color>969696</color>
+		<pos>1 1</pos>
+		<size>0.2 0</size>
+    </text>
+
+    <datetime name="md_releasedate">
+		<color>EFEFFF</color>
+		<pos>1 1</pos>
+		<pos verticalScreen="true">0.7 0.645</pos>
+		<size>0 0.033</size>
+		<format>${dateFormat}</format>
+    </datetime>
+    
+	<text name="md_description">
+		<color>00d2f3</color>
+		<pos>0.031 0.81</pos>
+		<size>0.46 0.15</size>
+		<fontPath>./_art/fuentes/morpheus.TTF</fontPath>
+		<fontSize>0.018</fontSize>
+		<forceUppercase>1</forceUppercase>
+		<zIndex>3</zIndex>			
+	</text>
+
+  </view>
+
+</theme>

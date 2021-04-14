@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+	
+		<!-- Imagen / video de fondo -->
+		
+		<image name="background" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./_art/bg.png</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!--<video name="staticBackgroundVideo" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./_art/fondo.mp4</path>
+			<zIndex>1</zIndex>
+		</video>-->
+		
+		<!-- Logos sistemas -->
+		
+		<image name="logo">
+			<path>./_art/logos/${system.theme}.png</path>
+		</image>
+		
+		<!-- Logo de sistema en texto si falta imagen -->
+		
+		<text name="logoText">
+			<fontPath>./_art/fuentes/amiga4ever.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FF8000</color>
+			<forceUppercase>true</forceUppercase>    
+		</text>
+		
+		<!-- Menu de ayuda -->
+		
+		<helpsystem name="help">
+			<fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		</helpsystem>
+	
+	</view>
+  
+</theme>

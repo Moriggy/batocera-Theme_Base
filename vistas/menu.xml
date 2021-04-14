@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="menu">
+		<menuText name="menutitle">
+		  <fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		  <fontSize>0.044</fontSize>
+		  <color>FAFAFA</color>
+		</menuText>
+		<menuText name="menufooter">
+		  <fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		  <fontSize>0.02</fontSize>
+		  <color>777777FF</color>
+		</menuText>
+		<menuText name="menutext">
+		  <fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		  <fontSize>0.0325</fontSize>
+		  <color>969696</color>
+		  <separatorColor>282828</separatorColor>
+		  <selectorColor>${baseColor}</selectorColor>
+		  <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+		  <selectedColor>FFFFFF</selectedColor>
+		  <selectorGradientType>horizontal</selectorGradientType>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+		  <fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		  <fontSize>0.02</fontSize>
+		  <color>${groupColor}</color>
+		</menuTextSmall>
+		<menuGroup name="menugroup">
+		  <fontPath>./_art/fuentes/Watone.ttf</fontPath>
+		  <fontSize>0.025</fontSize>
+		  <color>${groupColor}</color>
+		  <separatorColor>${groupSeparatorColor}</separatorColor>
+		  <backgroundColor>00000000</backgroundColor>
+		  <lineSpacing>2.5</lineSpacing>
+		</menuGroup>
+		<menuBackground name="menubg">
+		  <color>242424</color>
+		  <cornerSize>32 32</cornerSize>
+		  <path>./_art/frame.png</path>
+		  <scrollbarColor>96969620</scrollbarColor>
+		  <scrollbarCorner>0.49</scrollbarCorner>
+		  <scrollbarSize>0.003</scrollbarSize>
+		  <scrollbarAlignment>innerright</scrollbarAlignment>
+		</menuBackground>
+		<menuIcons name="menuicons">
+		  <iconKodi>./_art/icons/Kodi.png</iconKodi>
+		  <iconSystem>./_art/icons/System.png</iconSystem>
+		  <iconUpdates>./_art/icons/Updates.png</iconUpdates>
+		  <iconGames>./_art/icons/Games.png</iconGames>
+		  <iconControllers>./_art/icons/Controllers.png</iconControllers>
+		  <iconUI>./_art/icons/UI.png</iconUI>
+		  <iconSound>./_art/icons/Sound.png</iconSound>
+		  <iconNetwork>./_art/icons/Network.png</iconNetwork>
+		  <iconScraper>./_art/icons/Scraper.png</iconScraper>
+		  <iconAdvanced>./_art/icons/Advanced.png</iconAdvanced>
+		  <iconQuit>./_art/icons/Quit.png</iconQuit>
+		  <iconRestart>./_art/icons/Restart.png</iconRestart>
+		  <iconShutdown>./_art/icons/Shutdown.png</iconShutdown>
+		  <iconFastShutdown>./_art/icons/Fastshutdown.png</iconFastShutdown>
+		  <iconRetroachievements>./_art/icons/Contest.png</iconRetroachievements>
+		  <iconManual>./_art/icons/Manual.png</iconManual>
+		</menuIcons>
+		<menuTextEdit name="menutextedit">
+		  <inactive>./_art/textinput_ninepatch.png</inactive>
+		  <active>./_art/textinput_ninepatch_active.png</active>
+		</menuTextEdit>
+		
+	</view>
+</theme>

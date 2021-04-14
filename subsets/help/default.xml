@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <customView name="system,basic,detailed,grid,gamecarousel,Carousel,Tiles,Boxes,Icons">
+    <helpsystem name="help">
+		<fontPath>./_art/fonts/Watone.ttf</fontPath>
+		<fontSize>0.025</fontSize>
+		<textColor>${baseColor}</textColor>
+		<iconColor>FFFFFFFF</iconColor>
+    </helpsystem>
+  </customView>
+</theme>
